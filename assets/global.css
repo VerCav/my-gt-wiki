@@ -44,4 +44,20 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/* Override dropdown menu background */
+.dropdown-menu {
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Style dropdown items */
+.dropdown-item {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #e9ecef; /* Lighter gray on hover */
+}
+
 

@@ -3,8 +3,8 @@
     <nuxt-link to="/">
       <img src="/GTlogo.png" alt="Guardian Tales Logo" class="logo" />
     </nuxt-link>
-    <DatabaseDropdown />
-    <GuidesDropdown />
+    <DatabaseDropdown v-b-hover="onHover" :show="showDropdown"  />
+    <GuidesDropdown v-b-hover="onHover" :show="showDropdown"  />
     <ToolsDropdown />
     <LoreDropdown />
     <div class="nav-links">
@@ -32,6 +32,16 @@ export default {
   components: {
     DatabaseDropdown,
     GuidesDropdown,
+  },
+  data() {
+    return {
+      showDropdown: false
+    };
+  },
+  methods: {
+    onHover() {
+      this.showDropdown = !this.showDropdown;
+    }
   }
 }
 </script>
